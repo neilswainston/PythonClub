@@ -15,6 +15,8 @@ nucl_count = {'A': 0,
 for nucl in dna_seq1:
     nucl_count[nucl] += 1
 
-print('Counts ' + str(nucl_count))
-print('Length ' + str(len(dna_seq1)))
+
+for key, value in nucl_count.items():
+    print(str(key) + ' ' + str(value / len(dna_seq1)))
+
 print('%GC ' + str((nucl_count['C'] + nucl_count['G']) / len(dna_seq1) * 100))
