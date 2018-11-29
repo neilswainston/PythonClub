@@ -7,18 +7,18 @@ t_count = 0
 valid_count = 0
 
 for nucl in dna_seq1:
-  if nucl == 'G':
-    g_count += 1
-    valid_count += 1
-  elif nucl == 'C':
-    c_count += 1
-    valid_count += 1
-  elif nucl == 'A':
-    a_count += 1
-    valid_count += 1
-  elif nucl == 'T':
-    t_count += 1
-    valid_count += 1
+    if nucl == 'G':
+        g_count += 1
+        valid_count += 1
+    elif nucl == 'C':
+        c_count += 1
+        valid_count += 1
+    elif nucl == 'A':
+        a_count += 1
+        valid_count += 1
+    elif nucl == 'T':
+        t_count += 1
+        valid_count += 1
 
 print(float(a_count) / valid_count)
 print(float(c_count) / valid_count)
